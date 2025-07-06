@@ -1,0 +1,333 @@
+/* Base Styles */
+html {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+  line-height: 1.6;
+  padding-top: 56px;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 70px; 
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #0d6efd;
+  outline: none;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #0d6efd;
+  outline: none;
+}
+
+/* Section Titles */
+.section-title {
+  font-weight: 700;
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  color: #0d6efd;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: #0d6efd;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after,
+.section-title:focus::after {
+  width: 80px;
+  outline: none;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f8f9fa;
+  padding: 8rem 1rem 6rem;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+  animation: slideInDown 1s ease forwards;
+}
+
+.hero p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 1.75rem;
+  color: #6c757d;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.hero .btn-primary {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn-primary:hover,
+.hero .btn-primary:focus {
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 18px rgba(11, 94, 215, 0.5);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+/* About Section */
+#about {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+#about p {
+  font-size: 1.15rem;
+  color: #333333;
+  line-height: 1.8;
+  margin-top: 0;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f8f9fa;
+  padding: 4rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+.skill-box {
+  background-color: #0d6efd;
+  color: #ffffff;
+  padding: 15px 0;
+  margin: 10px auto;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  cursor: default;
+  user-select: none;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  will-change: transform, box-shadow;
+}
+
+.skill-box:hover,
+.skill-box:focus {
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 20px rgba(11, 94, 215, 0.6);
+  transform: translateY(-5px) scale(1.05);
+  outline: none;
+}
+
+/* Experience & Projects Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  cursor: default;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.blue-shadow {
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+/* Card Titles */
+.card-title {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.card-subtitle {
+  font-weight: 500;
+  color: #6c757d;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+form label {
+  font-weight: 600;
+  color: #212529;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+}
+
+form button.btn-primary {
+  border-radius: 50px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form button.btn-primary:hover,
+form button.btn-primary:focus {
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 18px rgba(11, 94, 215, 0.5);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+/* Contact info links */
+#contact a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover,
+#contact a:focus {
+  color: #0b5ed7;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  user-select: none;
+  letter-spacing: 0.02em;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skill-box {
+    font-size: 1rem;
+    height: 55px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#success-message {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  opacity: 0;
+  animation: fade-in-out 5s ease-in-out forwards;
+}
+
+@keyframes fade-in-out {
+  0%   { opacity: 0; transform: translateY(-10px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  80%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
