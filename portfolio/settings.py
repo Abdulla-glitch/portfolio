@@ -31,8 +31,6 @@ ALLOWED_HOSTS = [
     'portfolio-1-w7oe.onrender.com',
 ]
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
