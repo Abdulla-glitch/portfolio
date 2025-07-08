@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,11 +26,7 @@ SECRET_KEY = 'django-insecure-e9@9rft9pl9zwfoi96f+!!300xhjyi92^u4rif#)2%ak*d!*ob
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'portfolio-1-w7oe.onrender.com',
-]
+ALLOWED_HOSTS = ['portfolio-ovep.onrender.com']
 
 # Application definition
 
