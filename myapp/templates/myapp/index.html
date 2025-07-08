@@ -132,16 +132,33 @@
 <main>
 
   <!-- Hero Section -->
-  <section class="hero text-center">
+    <section class="hero text-center">
     <div class="container">
-      <h1>Hi, I'm AbdullA</h1>
-      <p class="lead">Fresher Web Developer | Python | Django | Flask</p>
-      <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" 
-         class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer" aria-label="View Resume PDF">
-        View Resume
-      </a>
+        <h1>Hi, I'm AbdullA</h1>
+        <p class="lead">Fresher Web Developer | Python | Django | Flask</p>
+
+        <div class="resume-buttons d-flex flex-wrap justify-content-center gap-3 mt-4">
+        <!-- View Resume (simple version) -->
+        <a href="{% static 'myapp/resume/Abdulla a.resume.pdf' %}" 
+            class="btn btn-primary mt-3"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Resume PDF">
+            View Resume
+        </a>
+
+        <!-- Download Resume (with icon) -->
+        <a href="{% static 'myapp/resume/Abdulla a.resume.pdf' %}"
+            download="Abdulla_A_Resume.pdf"
+            class="btn btn-primary mt-3"
+            aria-label="Download Resume as PDF">
+            <i class="bi bi-download me-2"></i> Download Resume
+        </a>
+        </div>
     </div>
-  </section>
+    </section>
+
+
 
   <!-- About Section -->
   <section id="about" class="py-5">
@@ -174,7 +191,7 @@
       <div class="card blue-shadow mb-4">
         <div class="card-body">
           <h5 class="card-title">Python Fullstack Intern</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Company Name | Jan 2024 - Jun 2024</h6>
+          <h6 class="card-subtitle mb-2 text-muted">Uniq Technologies | Jan 2024 - Jun 2024</h6>
           <p class="card-text">
             Worked on developing web applications using Python, Django, Flask, and frontend technologies. Gained hands-on experience building REST APIs, integrating databases (SQL), and deploying projects.
           </p>
@@ -191,16 +208,18 @@
         <div class="col-md-6 mb-4">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Portfolio Website</h5>
-              <p class="card-text">Responsive personal portfolio using HTML, CSS, and Bootstrap to showcase projects and skills.</p>
+              <h5 class="card-title">Student Management System</h5>
+              <p class="card-text">Developed a full-stack Student Management System using Django and SQLite with authentication and role-based access.
+Included features like CRUD, search, filtering, PDF export, and responsive UI using HTML/CSS.</p>
             </div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
           <div class="card blue-shadow h-100">
             <div class="card-body">
-              <h5 class="card-title">Flask Blog App</h5>
-              <p class="card-text">A blogging platform using Flask and SQLite.</p>
+              <h5 class="card-title">Django Blog App</h5>
+              <p class="card-text">Built a dynamic Blog App using Django and SQLite with full CRUD functionality for posts and user authentication.
+Implemented features like post categories, comments, and a responsive UI using HTML, CSS, and Bootstrap.</p>
             </div>
           </div>
         </div>
@@ -242,17 +261,23 @@
 
   <!-- Social Icons Below Contact Section -->
   <div class="container text-center mt-4 mb-4">
-    <div class="d-flex justify-content-center gap-4">
-      <a href="mailto:youremail@example.com" class="text-dark fs-4" aria-label="Send email" title="Email">
-        <i class="bi bi-envelope-fill"></i>
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="text-dark fs-4" aria-label="GitHub" title="GitHub">
-        <i class="bi bi-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="text-dark fs-4" aria-label="LinkedIn" title="LinkedIn">
-        <i class="bi bi-linkedin"></i>
-      </a>
-    </div>
+<div class="d-flex justify-content-center gap-4">
+  <!-- Email -->
+  <a href="mailto:abdullanasarath2000@email.com" class="text-dark fs-4" aria-label="Send Email" title="Email">
+    <i class="bi bi-envelope-fill"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/Abdulla-glitch" target="_blank" rel="noopener" class="text-dark fs-4" aria-label="GitHub" title="GitHub">
+    <i class="bi bi-github"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/abdulla2004/" target="_blank" rel="noopener" class="text-dark fs-4" aria-label="LinkedIn" title="LinkedIn">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</div>
+
   </div>
 
 </main>
@@ -269,6 +294,3 @@
 
 </body>
 </html>
-
-
-
